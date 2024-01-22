@@ -3,25 +3,38 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-router.get('/', (req, res) => {
+// get all categories
+router.get('/', async (req, res) => {
   // find all categories
-  // be sure to include its associated Products
+  try {
+    const categoryData = await Category.findAll({
+      //includes associated Products
+      include: [{ model: Product }]
+    });
+    res.status(200).json(categoryData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
-router.get('/:id', (req, res) => {
+// get one categories
+router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
 });
 
-router.post('/', (req, res) => {
+// create categories
+router.post('/', async (req, res) => {
   // create a new category
 });
 
-router.put('/:id', (req, res) => {
+// update categories
+router.put('/:id', async (req, res) => {
   // update a category by its `id` value
 });
 
-router.delete('/:id', (req, res) => {
+// delete categories
+router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
 });
 
