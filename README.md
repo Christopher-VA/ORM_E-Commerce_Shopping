@@ -46,7 +46,10 @@ npm i sequelize
 npm run seed
 
 ## Images
-<video src="Assets/2024-01-22%2021-33-47.mp4" controls title="\[Title\](<Assets/2024-01-22 21-33-47.mkv>)"></video>
+![Alt text](Assets/InsomniaFiles.PNG)
+![Alt text](Assets/Example-of-get.PNG)
+![Alt text](Assets/Example-of-Id.PNG)
+An MP4 video that shows how the coding works through insomnia and it has been placed in the Assets folder
 
 ## Links
 Github: [Link text](https://github.com/Christopher-VA)
