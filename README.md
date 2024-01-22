@@ -46,7 +46,7 @@ npm i sequelize
 npm run seed
 
 ## Images
-[Title](<Assets/2024-01-22 21-33-47.mkv>)
+<video src="Assets/2024-01-22%2021-33-47.mp4" controls title="\[Title\](<Assets/2024-01-22 21-33-47.mkv>)"></video>
 
 ## Links
 Github: [Link text](https://github.com/Christopher-VA)
